@@ -8,7 +8,7 @@ fn on_connect(socket: SocketRef) {
     info!("Socket:io connected: {:?} {:?}", socket.ns(), socket.id);
     println!("connected");
 
-    socket.emit("message", "hello");
+    socket.emit("message", "alert");
 }
 
 #[tokio::main]
